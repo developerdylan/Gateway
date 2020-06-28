@@ -1,0 +1,8 @@
+com\ddylan\gateway\profile\Profile.class
+com\ddylan\gateway\permission\group\PermissionGroup.class
+com\ddylan\gateway\Gateway.class
+com\ddylan\gateway\permission\grant\GrantBuilder.class
+com\ddylan\gateway\permission\grant\Grant.class
+com\ddylan\gateway\permission\user\PermissionUser.class
+com\ddylan\gateway\permission\Permission.class
+com\ddylan\gateway\permission\PermissionHandler.class

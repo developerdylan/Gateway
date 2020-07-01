@@ -19,8 +19,8 @@ public class Profile {
 
         //  Attempt to automatically find the name throughout the system to automatically find them.
         //  It is expected for the name to be updated on every AsyncPlayerPreLoginEvent
-        if (Gateway.getInstance().getLibrary().getUuidCache().ensure(uuid)) {
-            this.name = Gateway.getInstance().getLibrary().getUuidCache().name(uuid);
+        if (Gateway.getInstance().getLibraryPlugin().getUuidCache().ensure(uuid)) {
+            this.name = Gateway.getInstance().getLibraryPlugin().getUuidCache().name(uuid);
         } else {
             if (Bukkit.getPlayer(uuid) != null) {
                 this.name = Bukkit.getPlayer(uuid).getName();

@@ -1,24 +1,24 @@
 package com.ddylan.gateway;
 
-import com.ddylan.xlib.Library;
+import com.ddylan.library.LibraryPlugin;
 import com.lunarclient.bukkitapi.LunarClientAPI;
 import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
 
 @Getter
-public class Gateway extends JavaPlugin {
+public class  Gateway extends JavaPlugin {
 
     @Getter private static Gateway instance;
 
     private LunarClientAPI lunarAPI;
-    private Library Library;
+    private LibraryPlugin LibraryPlugin;
 
     @Override
     public void onEnable() {
         instance = this;
 
         lunarAPI = (LunarClientAPI) getServer().getPluginManager().getPlugin("LunarClient-API");
-        Library = (Library) getServer().getPluginManager().getPlugin("xLib");
+        LibraryPlugin = (LibraryPlugin) getServer().getPluginManager().getPlugin("Library");
     }
 
     @Override
